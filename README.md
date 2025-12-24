@@ -65,3 +65,5 @@ We smooth the data by convolving the signal with a normalized window vector.
 $$y[n] = \frac{1}{M} \sum_{j=0}^{M-1} x[n-j]$$
 
 Where $M$ is the window size (`filter_window` in the config).
+
+<img width="1613" height="895" alt="Screenshot 2025-12-24 163613" src="https://github.com/user-attachments/assets/bc311e2b-2f93-4cc8-a31e-66e7b2dc7c82" />
