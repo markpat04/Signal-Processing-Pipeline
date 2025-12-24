@@ -1,8 +1,7 @@
 <div align="center">
 
-# 📡 SignalScope: DSP & Visualization Engine
+# 📡 A Signal Processing Pipeline
 
-**A Signal Processing Pipeline**
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-Scientific_Computing-013243?logo=numpy)
@@ -10,7 +9,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Maintenance-Active-blueviolet)
 
-[View Demo](#-visual-output) • [Installation](#-installation) • [Theory](#-theoretical-background) • [Contribute](#-contributing)
+[View Demo](#-visual-output) • [Theory](#-theoretical-background)
 
 </div>
 
@@ -18,14 +17,9 @@
 
 ## 📖 Overview
 
-**SignalScope** is a comprehensive educational tool designed to bridge the gap between theoretical Signal Processing and practical Python implementation.
+This project demonstrates an end-to-end workflow for **Digital Signal Processing (DSP)** in Python. It simulates real-world signal data challenges by generating synthetic waveforms, introducing Gaussian noise, and applying statistical filtering techniques to recover the original signal.
 
-In Data Science, real-world data is rarely clean. It contains noise, outliers, and artifacts. This project simulates that reality by generating perfect waveforms, corrupting them with Gaussian noise, and then using statistical filtering (Moving Average) and Frequency Domain Analysis (FFT) to recover the signal.
-
-### 🎯 Use Cases
-* **IoT Sensor Analysis:** Cleaning noisy vibration data from machinery.
-* **Financial Modeling:** Smoothing volatile stock market trends.
-* **Audio Engineering:** Understanding Signal-to-Noise Ratio (SNR).
+The project is designed to visualize the difference between **Time Domain** (how signals look) and **Frequency Domain** (what signals are composed of) using Fast Fourier Transforms (FFT).
 
 ---
 
@@ -71,12 +65,3 @@ We smooth the data by convolving the signal with a normalized window vector.
 $$y[n] = \frac{1}{M} \sum_{j=0}^{M-1} x[n-j]$$
 
 Where $M$ is the window size (`filter_window` in the config).
-
----
-
-## 🛠️ Installation
-
-### 1. Clone the repository
-```bash
-git clone [https://github.com/yourusername/SignalScope.git](https://github.com/yourusername/SignalScope.git)
-cd SignalScope
